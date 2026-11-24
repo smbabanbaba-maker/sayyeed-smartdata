@@ -88,3 +88,21 @@
 .transferhub .dataphone{min-height:52px}.transferhub .dataphone select{flex:1;min-width:0;border:0;background:transparent;color:var(--ink);font-size:13px;outline:none}.transferstatus{display:flex;align-items:center;gap:8px;padding:9px 10px;border-radius:6px;background:#eff6ff;color:#1d4ed8;font-size:11px}.transferstatus svg{width:16px;height:16px;flex-shrink:0}.transferhub .compactpay{margin-top:8px}.dark .transferstatus{background:#172554;color:#bfdbfe}
 
 .bankpicker img{width:30px;height:30px;object-fit:contain;flex-shrink:0}.standardized{width:100%;max-width:600px;margin-inline:auto}.standardized .panelintro{display:none}.standardized label{display:grid;gap:7px;font-size:11px;font-weight:650;color:#2563eb}.standardized input,.standardized select,.standardized textarea{width:100%;min-height:50px;border:1px solid var(--line);border-radius:7px;padding:10px 12px;background:var(--card);color:var(--ink);font-size:14px;box-sizing:border-box}.standardized p{font-size:12px;line-height:1.6;color:var(--muted)}.standardized .primary,.standardized .outline{min-height:42px;border-radius:7px;font-size:12px}.standardized .formactions{display:flex;gap:8px;flex-wrap:wrap}.standardized .formactions button{flex:1}.standardized input:focus,.standardized select:focus{outline:2px solid #2563eb;outline-offset:1px}@media(max-width:800px){.standardized input,.standardized select{font-size:16px}.standardized{padding:12px;box-sizing:border-box}}
+
+/* Unified premium service surfaces */
+.refmode .content>.datahub,.refmode .content>.standardized{max-width:600px}
+.refmode .standardized{display:grid;gap:14px;padding:18px;background:var(--card);border:1px solid var(--line);border-radius:18px;box-shadow:0 4px 20px #0f172a06}
+.refmode .standardized label{font-size:12px;letter-spacing:0;color:var(--ink);font-weight:650}
+.refmode .standardized input,.refmode .standardized select,.refmode .standardized textarea{border-radius:10px;min-height:48px;background:var(--card)}
+.refmode .standardized .primary,.refmode .compactpurchase .compactpay{border-radius:12px;min-height:48px;font-size:13px;font-weight:700;letter-spacing:0;text-transform:none;background:#2563eb;color:white}
+.refmode .standardized .outline{border-radius:12px;min-height:44px}
+.refmode .standardized .panelintro{display:flex;align-items:center;gap:12px}
+.refmode .standardized .panelintro h2{font-size:15px;margin:0}
+.refmode .standardized .panelintro p{font-size:11px;margin:3px 0 0}
+.refmode .standardized .panelicon{width:42px;height:42px;border-radius:12px;background:#dbeafe;color:#2563eb}
+.refmode .standardized>p{margin:0;font-size:12px}
+.refmode .compactpurchase .dataphone{border-radius:12px}
+.refmode .compactpurchase .datafieldlabel{letter-spacing:0;text-transform:none;font-size:12px;color:var(--ink)}
+.refmode .discogrid button,.refmode .amountgrid button{border-radius:10px}
+.refmode .standardized button:active,.refmode .compactpurchase button:active{transform:scale(.98)}
+@media(max-width:800px){.refmode .standardized{padding:14px;gap:12px;border-radius:14px}.refmode .standardized .panelintro h2{font-size:14px}.refmode .standardized input,.refmode .standardized select{font-size:16px}}

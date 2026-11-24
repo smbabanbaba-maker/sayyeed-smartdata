@@ -110,3 +110,25 @@
 .cardshub{gap:16px}.virtualpreview{background:radial-gradient(ellipse at 100% 0%,#2563eb,transparent 70%),#0f172a;color:white;border-radius:18px;padding:22px;aspect-ratio:1.75;display:flex;flex-direction:column;justify-content:space-between;max-width:400px;width:100%;margin:auto;box-sizing:border-box;box-shadow:0 12px 28px #0f172a25}.virtualtop{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:10px;letter-spacing:.08em}.virtualtop strong{font-size:12px}.virtualchip{width:34px;height:25px;border-radius:5px;background:linear-gradient(135deg,#e5e7eb,#94a3b8);border:1px solid #ffffff80}.virtualnumber{font-size:clamp(14px,4vw,22px);letter-spacing:.08em}.cardoptions{display:grid;gap:8px}.cardoptions button{display:flex;align-items:center;gap:12px;text-align:left;padding:14px;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:12px}.cardoptions button>svg{color:#2563eb;width:22px}.cardoptions button span{flex:1;display:grid;gap:4px}.cardoptions strong{font-size:13px}.cardoptions small,.carddisclaimer{font-size:11px;color:var(--muted)}
 
 .cardnetworks{display:grid;gap:8px;text-align:center}.cardnetworks small{font-size:11px;color:var(--muted)}.cardnetworks>div{display:flex;justify-content:center;gap:10px}.cardnetworks img{width:80px;height:48px;padding:8px 14px;box-sizing:border-box;object-fit:contain;background:white;border:1px solid #e2e8f0;border-radius:9px}.cardnetworks img:first-child{filter:none}
+
+
+/* Exam PIN: responsive provider selection and checkout */
+.examhub{width:100%;max-width:640px;margin-inline:auto;box-sizing:border-box;padding:clamp(16px,3vw,28px);border-radius:22px;display:flex;flex-direction:column;gap:12px}
+.examhub .panelintro{margin:0 0 8px;padding:16px;border-radius:16px;background:rgba(37,99,235,.07);display:flex;align-items:center;gap:12px}
+.examhub .panelintro h2{font-size:21px;line-height:1.2;margin:0 0 4px;letter-spacing:-.025em}
+.examhub .panelintro p{font-size:13px;margin:0;line-height:1.5}
+.examhub .cablegrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:0 0 10px}
+.examhub .cablegrid button{min-width:0;min-height:110px;padding:12px 5px;border:1px solid rgba(100,116,139,.25);border-radius:15px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;position:relative}
+.examhub .cablegrid button.selected{border:2px solid #2563eb;background:rgba(37,99,235,.08)}
+.examhub .cablegrid button.selected:after{content:'✓';position:absolute;right:6px;top:6px;background:#2563eb;color:white;border-radius:50%;width:17px;height:17px;font-size:11px;display:grid;place-items:center}
+.examhub .cablemark{width:58px;height:58px;border-radius:12px;position:relative;display:grid;place-items:center;overflow:hidden}
+.examhub .cablemark img{position:absolute;inset:0;width:100%;height:100%;padding:5px;box-sizing:border-box;object-fit:contain}
+.examhub .cablegrid small{font-size:12px;font-weight:700}
+.examhub .datafieldlabel{font-size:13px;font-weight:650;margin:4px 0 0}
+.examhub .dataphone{min-height:50px;border-radius:12px}
+.examhub .dataphone select,.examhub .dataphone input{width:100%;min-width:0;font-size:14px}
+.examhub .datareview{display:flex;flex-wrap:wrap;align-items:center;gap:12px;padding:14px;border-radius:14px;margin-top:8px;background:rgba(100,116,139,.07)}
+.examhub .datareview .primary{min-height:46px;flex:1;white-space:normal}
+.examhub .carddisclaimer{font-size:12px;line-height:1.6;margin:0}
+.examhub button:focus-visible,.examhub input:focus-visible,.examhub select:focus-visible{outline:2px solid #2563eb;outline-offset:3px}
+@media(max-width:480px){.examhub{padding:14px;gap:10px;border-radius:16px}.examhub .cablegrid{gap:7px}.examhub .cablegrid button{min-height:96px}.examhub .cablemark{width:48px;height:48px}.examhub .datareview .primary{flex-basis:100%}.examhub .panelintro h2{font-size:18px}}

@@ -295,3 +295,6 @@ html,body{background:#f8f5f6;color:#000000;color-scheme:light}.shell,.shell.dark
 
 /* Mobile home: near edge-to-edge banner, no nested horizontal gutters */
 @media(max-width:767px){.shell.homeview .content:has(>.smartdash){width:100%!important;max-width:100%!important;min-width:0!important;padding-inline:6px!important;box-sizing:border-box!important}.shell.homeview .content>.referencehome.smartdash{width:100%!important;max-width:100%!important;margin-inline:0!important;padding-inline:0!important;box-sizing:border-box!important;grid-template-columns:minmax(0,1fr)!important}.shell.homeview .smartdash>.smarttechbanner{width:100%!important;max-width:100%!important;margin-inline:0!important;justify-self:stretch!important;box-sizing:border-box!important}}
+
+/* Bring home banner closer to header on mobile */
+@media(max-width:767px){.shell.homeview .content:has(>.smartdash){padding-top:4px!important}.shell.homeview .content>.referencehome.smartdash{padding-top:0!important;margin-top:0!important}.shell.homeview .smartdash>.smarttechbanner{margin-top:0!important}}

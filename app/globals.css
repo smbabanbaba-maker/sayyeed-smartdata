@@ -132,3 +132,22 @@
 .examhub .carddisclaimer{font-size:12px;line-height:1.6;margin:0}
 .examhub button:focus-visible,.examhub input:focus-visible,.examhub select:focus-visible{outline:2px solid #2563eb;outline-offset:3px}
 @media(max-width:480px){.examhub{padding:14px;gap:10px;border-radius:16px}.examhub .cablegrid{gap:7px}.examhub .cablegrid button{min-height:96px}.examhub .cablemark{width:48px;height:48px}.examhub .datareview .primary{flex-basis:100%}.examhub .panelintro h2{font-size:18px}}
+
+
+/* Educational data */
+.eduhub .eduhero{position:relative;overflow:hidden;background:linear-gradient(125deg,#102c58,#174b91);color:#fff;border-radius:18px;padding:22px;display:flex;flex-direction:column;align-items:flex-start;gap:8px}
+.eduhub .eduhero:after{content:'';position:absolute;right:-45px;bottom:-85px;width:210px;height:210px;border:28px solid rgba(255,255,255,.07);border-radius:50%;pointer-events:none}
+.eduhub .eduhero h2{font-size:clamp(21px,4vw,29px);letter-spacing:-.04em;margin:0;color:white}
+.eduhub .eduhero p{font-size:13px;line-height:1.6;margin:0;max-width:330px;color:#e1ebff}
+.eduhub .eduhero small{font-size:10px;letter-spacing:.12em;font-weight:700;color:#c9ddff}
+.eduhub .eduicon{display:grid;place-items:center;width:40px;height:40px;border-radius:12px;background:rgba(255,255,255,.15)}
+.edunetworks{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.edunetworks button{min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;padding:12px 4px;border:1px solid rgba(100,116,139,.3);border-radius:14px;background:transparent;color:inherit}
+.edunetworks button.selected{border:2px solid #2563eb;background:rgba(37,99,235,.08)}
+.edunetworks strong{font-size:11px}
+.edumark{position:relative;display:grid;place-items:center;width:42px;height:42px;border-radius:10px;overflow:hidden;font-size:10px;color:white;font-weight:700}
+.edumark img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
+.eduempty{display:flex;flex-direction:column;align-items:center;text-align:center;gap:8px;padding:24px 16px;border:1px dashed rgba(100,116,139,.4);border-radius:14px}
+.eduempty small{font-size:12px;line-height:1.5;max-width:290px}
+.eduhub .primary:disabled{opacity:.5;cursor:not-allowed}
+@media(max-width:380px){.edunetworks{gap:5px}.edumark{width:34px;height:34px}.eduhub .eduhero{padding:16px}}

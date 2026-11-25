@@ -151,3 +151,5 @@
 .eduempty small{font-size:12px;line-height:1.5;max-width:290px}
 .eduhub .primary:disabled{opacity:.5;cursor:not-allowed}
 @media(max-width:380px){.edunetworks{gap:5px}.edumark{width:34px;height:34px}.eduhub .eduhero{padding:16px}}
+
+.cashhub .cashnetworks{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.cashhub .cashnetworks button{min-height:92px}.cashhub .edumark{width:48px;height:48px}.cashsummary{padding:16px;border:1px solid rgba(100,116,139,.25);border-radius:16px;display:flex;flex-direction:column;gap:13px}.cashsummary h3{font-size:15px;margin:0 0 3px}.cashsummary>div{display:flex;justify-content:space-between;gap:12px;font-size:13px;align-items:center}.cashsummary .cashreceive{border-top:1px solid rgba(100,116,139,.25);padding-top:13px}.cashreceive strong{font-size:20px;color:#16a34a}.cashsummary small{font-size:12px;line-height:1.5}.cashhub .amountgrid{margin:0;grid-template-columns:repeat(3,minmax(0,1fr))}.cashhub .compactpay:disabled{opacity:.5;cursor:not-allowed}

@@ -364,3 +364,5 @@ html,body{background:#f8f5f6;color:#000000;color-scheme:light}.shell,.shell.dark
 
 /* Consistent, slightly wider mobile gutters */
 @media(max-width:767px){.shell .content,.shell.homeview .content:has(>.smartdash),.shell .content:has(>.walletv2),.shell .content:has(>.cryptozen),.shell .content:has(>.profilemodern){padding-inline:clamp(12px,3.5vw,20px)!important}.shell .content>:is(.datahub,.panel,.allservices,.referencehome,.sdwallet,.profilemodern,.cryptozen),.shell.homeview .content>.referencehome.smartdash,.shell .content>.walletv2{width:100%!important;max-width:100%!important;margin-inline:auto!important;box-sizing:border-box!important}}
+
+@media(max-width:767px){.shell.homeview .content:has(>.smartdash),.shell .content:has(>.walletv2){padding-inline:clamp(9px,2.5vw,14px)!important}}

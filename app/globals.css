@@ -337,3 +337,24 @@ html,body{background:#f8f5f6;color:#000000;color-scheme:light}.shell,.shell.dark
 
 /* Five carrier selectors: never wrap, including narrow mobile screens */
 .shell .content :is(.providergrid,.edunetworks,.cashnetworks,.buydatanetworks){display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr))!important;grid-auto-flow:column!important;width:100%!important;max-width:100%!important;min-width:0!important;gap:4px!important;box-sizing:border-box!important}.shell .content :is(.providergrid,.edunetworks,.cashnetworks,.buydatanetworks)>*{width:100%!important;min-width:0!important;max-width:100%!important;margin:0!important;box-sizing:border-box!important;grid-column:auto!important}.shell .content :is(.providergrid,.edunetworks,.cashnetworks,.buydatanetworks) img{max-width:100%!important;object-fit:contain!important}@media(max-width:767px){.shell .content :is(.providergrid,.edunetworks,.cashnetworks,.buydatanetworks)>*{padding:4px 1px!important}.shell .content :is(.providergrid,.edunetworks,.cashnetworks,.buydatanetworks) :is(strong,button>span:last-child){font-size:10px!important}}
+
+/* Unified inset mobile workspace, based on approved All Services layout */
+@media(max-width:767px){
+.shell .content,.shell.homeview .content:has(>.smartdash),.shell .content:has(>.walletv2),.shell .content:has(>.cryptozen),.shell .content:has(>.profilemodern){width:100%!important;max-width:100%!important;min-width:0!important;box-sizing:border-box!important;padding:12px clamp(16px,5.7vw,28px) 108px!important;margin-inline:auto!important;}
+.shell .content>:is(.datahub,.panel,.allservices,.referencehome,.sdwallet,.profilemodern,.cryptozen){width:100%!important;max-width:100%!important;min-width:0!important;margin-inline:auto!important;box-sizing:border-box!important;}
+.shell.homeview .content>.referencehome.smartdash,.shell .content>.walletv2{width:100%!important;margin-inline:auto!important;gap:12px!important;}
+.shell .content :is(.smarttechbanner,.sdwalletcard,.profilehero,.czhead,.virtualpreview,.refbanner,.devbanner){max-width:100%!important;min-width:0!important;box-sizing:border-box!important;border-radius:16px!important;overflow:hidden;}
+.shell.homeview .smartdash>.smarttechbanner,.shell .walletv2 .sdwalletcard{padding:14px!important;min-height:0!important;}
+.shell .content :is(.smartservices,.smartactivity,.sdwalletgroup,.walletaccount,.profilelist,.czpanel,.devtools,.panel){max-width:100%!important;min-width:0!important;box-sizing:border-box!important;border-radius:16px!important;}
+.shell .content :is(.datahub,.profilemodern,.sdwallet,.allservices) :is(input,select,textarea){max-width:100%!important;min-width:0!important;box-sizing:border-box!important;}
+.shell .content :is(.datahub,.profilemodern,.sdwallet,.allservices) img{max-width:100%;object-fit:contain;}
+.shell .content :is(.datahub,.profilemodern,.sdwallet,.allservices) :is(h2,h3){overflow-wrap:anywhere;}
+.shell .content :is(.providergrid,.edunetworks,.cashnetworks,.buydatanetworks){grid-template-columns:repeat(5,minmax(0,1fr))!important;gap:3px!important;}
+.shell .content :is(.providergrid,.edunetworks,.cashnetworks,.buydatanetworks)>*{min-width:0!important;padding-inline:1px!important;}
+.shell .content :is(.providergrid,.edunetworks,.cashnetworks,.buydatanetworks) img{width:24px!important;height:24px!important;}
+.shell .content .smartgrid{grid-template-columns:repeat(4,minmax(0,1fr))!important;}
+.shell .content .profilemetrics{flex-wrap:wrap;gap:8px;}
+.shell .content .profilemetrics strong{font-size:12px;}
+.shell .content .servicesearch{width:100%!important;max-width:100%!important;box-sizing:border-box!important;}
+.shell .content .datahub{overflow-wrap:anywhere;}
+}
